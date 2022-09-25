@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "KsghSrh9Ia6iBB+uue+6mXfpEagKvt1rrHQEfmjefvWRK3oejJLyVEnC1/7nhG9DonRKI8ewiZj7pgk4zVmj0g==",
+  "success": true,
+  "projectFilePath": "/Users/ayan/Projects/Final-Project/Final-Project/Final-Project.csproj",
+  "expectedPackageFiles": [
+    "/Users/ayan/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/ayan/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.28/microsoft.netcore.app.host.osx-x64.3.1.28.nupkg.sha512",
+    "/Users/ayan/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
