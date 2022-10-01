@@ -1,4 +1,37 @@
 ﻿<Properties StartupConfiguration="{F8864631-459F-479D-A204-DCBD2D3AD669}|Default">
-  <MonoDevelop.Ide.ItemProperties.Final-Project FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Final-Project/Program.cs">
+    <Files>
+      <File FileName="Final-Project/Data/Bank.cs" Line="2" Column="1" />
+      <File FileName="Final-Project/Models/Branch.cs" Line="1" Column="1" />
+      <File FileName="Final-Project/Models/BaseEntity.cs" Line="9" Column="2" />
+      <File FileName="Final-Project/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Final-Project" expanded="True">
+            <Node name="Final-Project" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Implementations" expanded="True" />
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Final-Project FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

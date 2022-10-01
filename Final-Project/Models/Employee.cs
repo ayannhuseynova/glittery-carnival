@@ -1,13 +1,20 @@
 ﻿using System;
 namespace Final_Project.Models
 {
-    public class Employee
+    public class Employee : BaseEntity
     {
-        public string Name { get; set; }
         public string Surname { get; set; }
-        public decimal Salary { get; set; }
+        public int Salary { get; set; }
         public string Profession { get; set; }
-        public string SoftDelete { get; set; }
+
+        public Employee(string name, string surname, int salary, string profession, bool softdelete)
+        {
+            Name = name;
+            Surname = surname;
+            Salary = salary;
+            Profession = profession;
+            SoftDelete = false;
+        }
     }
 }
 
