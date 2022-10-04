@@ -1,12 +1,20 @@
 ﻿<Properties StartupConfiguration="{F8864631-459F-479D-A204-DCBD2D3AD669}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Final-Project/Program.cs">
     <Files>
-      <File FileName="Final-Project/Data/Bank.cs" Line="2" Column="1" />
-      <File FileName="Final-Project/Models/Branch.cs" Line="1" Column="1" />
-      <File FileName="Final-Project/Models/BaseEntity.cs" Line="9" Column="2" />
-      <File FileName="Final-Project/Program.cs" Line="16" Column="1" />
+      <File FileName="Final-Project/Program.cs" Line="12" Column="57" />
+      <File FileName="Final-Project/Services/Implementations/BranchService.cs" Line="58" Column="10" />
+      <File FileName="Final-Project/Services/Interfaces/IBankService.cs" Line="1" Column="1" />
+      <File FileName="Final-Project/Data/Bank.cs" Line="17" Column="1" />
+      <File FileName="Final-Project/Models/Branch.cs" Line="12" Column="59" />
+      <File FileName="Final-Project/Services/Interfaces/IBranchService.cs" Line="1" Column="1" />
+      <File FileName="Final-Project/Models/Employee.cs" Line="13" Column="5" />
+      <File FileName="Final-Project/Models/BaseEntity.cs" Line="1" Column="1" />
+      <File FileName="Final-Project/Models/Manager.cs" Line="1" Column="1" />
+      <File FileName="Final-Project/Services/Implementations/EmployeeService.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +27,6 @@
                 <Node name="Implementations" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -29,9 +36,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Final-Project FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Final-Project PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

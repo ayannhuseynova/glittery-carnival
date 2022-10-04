@@ -1,0 +1,5 @@
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.csproj.AssemblyReference.cache
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.AssemblyInfoInputs.cache
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.AssemblyInfo.cs
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.csproj.CoreCompileInputs.cache

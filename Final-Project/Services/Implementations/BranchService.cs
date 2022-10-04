@@ -21,7 +21,7 @@ namespace Final_Project.Services.Implementations
             }
         }
 
-        public void Delete(string name, string address, int budget)
+        public void Delete(string name)
         {
             Branch branch = bank.Datas.Find(x => x.Name.ToLower().Trim() == name.ToLower().Trim());
             branch.SoftDelete = true;
@@ -42,7 +42,7 @@ namespace Final_Project.Services.Implementations
             }
         }
 
-        public void Updarw(string name, int budget, string address)
+        public void Update(string name, decimal budget, string address)
         {
             Branch branch = bank.Datas.Find(x => x.Name.ToLower().Trim() == name.ToLower().Trim());
             branch.Address = address;
@@ -54,17 +54,17 @@ namespace Final_Project.Services.Implementations
 
         }
 
-        public void HireEmployee()
+        public void HireEmployee(string name)
         {
             throw new NotImplementedException();
         }
 
-        public void TransferEmployee(string name)
+        public void TransferEmployee()
         {
 
         }
 
-        public void TransferMoney()
+        public void TransferMoney(string name1, string name2, int budget)
         {
             throw new NotImplementedException();
         }

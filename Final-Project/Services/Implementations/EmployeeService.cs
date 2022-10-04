@@ -50,7 +50,7 @@ namespace Final_Project.Services.Implementations
             }
         }
 
-        public void Update(string name, int salary, string profession)
+        public void Update(string name, decimal salary, string profession)
         {
             Employee employee = bank.Datas.Find(x => x.Name.ToLower().Trim() == name.ToLower().Trim());
             employee.Salary = salary;

@@ -4,10 +4,10 @@ namespace Final_Project.Models
     public class Employee : BaseEntity
     {
         public string Surname { get; set; }
-        public int Salary { get; set; }
+        public decimal Salary { get; set; }
         public string Profession { get; set; }
 
-        public Employee(string name, string surname, int salary, string profession, bool softdelete)
+        public Employee(string name, string surname, decimal salary, string profession, bool softdelete)
         {
             Name = name;
             Surname = surname;
