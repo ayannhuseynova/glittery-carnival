@@ -3,3 +3,12 @@
 /Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.AssemblyInfoInputs.cache
 /Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.AssemblyInfo.cs
 /Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.csproj.CoreCompileInputs.cache
+/Users/ayan/Projects/Final-Project/Final-Project/bin/Debug/netcoreapp3.1/Final-Project
+/Users/ayan/Projects/Final-Project/Final-Project/bin/Debug/netcoreapp3.1/Final-Project.deps.json
+/Users/ayan/Projects/Final-Project/Final-Project/bin/Debug/netcoreapp3.1/Final-Project.runtimeconfig.json
+/Users/ayan/Projects/Final-Project/Final-Project/bin/Debug/netcoreapp3.1/Final-Project.runtimeconfig.dev.json
+/Users/ayan/Projects/Final-Project/Final-Project/bin/Debug/netcoreapp3.1/Final-Project.dll
+/Users/ayan/Projects/Final-Project/Final-Project/bin/Debug/netcoreapp3.1/Final-Project.pdb
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.dll
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.pdb
+/Users/ayan/Projects/Final-Project/Final-Project/obj/Debug/netcoreapp3.1/Final-Project.genruntimeconfig.cache

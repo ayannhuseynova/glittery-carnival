@@ -14,6 +14,7 @@ namespace Final_Project.Models
             Name = name;
             Address = address;
             Budget = budget;
+            Employees = new List<Employee>();
             SoftDelete = false;
         }
     }
