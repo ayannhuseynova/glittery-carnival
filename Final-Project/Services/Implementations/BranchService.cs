@@ -49,7 +49,7 @@ namespace Final_Project.Services.Implementations
             branch.Budget = budget;
         }
 
-        public void GetProfit(int budget)
+        public void GetProfit(decimal budget)
         {
 
         }
@@ -64,7 +64,7 @@ namespace Final_Project.Services.Implementations
 
         }
 
-        public void TransferMoney(string name1, string name2, int budget)
+        public void TransferMoney(string name1, string name2, decimal budget)
         {
             throw new NotImplementedException();
         }

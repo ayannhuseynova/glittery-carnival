@@ -7,7 +7,7 @@ namespace Final_Project.Services.Interfaces
     {
         void Create(T entity);
         void Delete(string name, string info, int infos);
-        void Update(string name, int money, string word);
+        void Update(string name, decimal money, string word);
         void Get(string input);
         void GetEverything();
     }
