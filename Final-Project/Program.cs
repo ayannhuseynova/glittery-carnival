@@ -47,7 +47,7 @@ namespace Final_Project
                 }
                 if (choice >= 0 || choice < 6 || choice == 10)
                 {
-                MenuSec:
+                secondaryMenu:
                     switch (choice)
                     {
                         case 1:
@@ -71,68 +71,68 @@ namespace Final_Project
                                     case 1:
                                         Console.Clear();
                                         Console.WriteLine("Please enter Name, Address, Budget on the NewBranch: ");
-                                        string newname1 = Console.ReadLine();
-                                        string newaddress1 = Console.ReadLine();
-                                        decimal newbudget1 = decimal.Parse(Console.ReadLine());
-                                        if (newname1 != null && newaddress1 != null && newbudget1 != 0)
+                                        string newBranchName = Console.ReadLine();
+                                        string newBranchAddress = Console.ReadLine();
+                                        decimal newBranchBudget = decimal.Parse(Console.ReadLine());
+                                        if (newBranchName != null && newBranchAddress != null && newBranchBudget != 0)
                                         {
-                                            Branch branew = new Branch(newname1, newaddress1, newbudget1);
-                                            branchService.Create(branew);
-                                            Console.WriteLine(branew.Name + ", " + branew.Address + ", " + branew.Budget + "\n");
+                                            Branch newBranch = new Branch(newBranchName, newBranchAddress, newBranchBudget);
+                                            branchService.Create(newBranch);
+                                            Console.WriteLine($"Hooray! You created a new branch with the name {newBranchName}. It is located in {newBranchAddress} and the budget is {newBranchBudget}!");
                                             branchService.GetEverything();
                                         }
                                         else
                                         {
-                                            Console.WriteLine("Pls enter input that is not null or zero, press any key to return Menu");
+                                            Console.WriteLine("Cannot be null!");
                                         }
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 2:
                                         Console.Clear();
                                         Console.WriteLine("Type in the name of a branch which you want to delete");
-                                        string delName = Console.ReadLine();
-                                        if (delName != null)
+                                        string deleteBranch = Console.ReadLine();
+                                        if (deleteBranch != null)
                                         {
-                                            branchService.Delete(delName);
+                                            branchService.Delete(deleteBranch);
                                         }
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 3:
                                         Console.Clear();
                                         Console.WriteLine("Type in the name of a branch to update the address and the budget");
-                                        string updName = Console.ReadLine();
+                                        string updatedBranchName = Console.ReadLine();
                                         Console.WriteLine("Type in the new address and on the new line new budget");
-                                        string updAddress = Console.ReadLine();
-                                        decimal updBudget = decimal.Parse(Console.ReadLine());
-                                        if (updBudget != 0 && updAddress != null && updName != null)
+                                        string updatedBranchAddress = Console.ReadLine();
+                                        decimal updatedBranchBudget = decimal.Parse(Console.ReadLine());
+                                        if (updatedBranchBudget != 0 && updatedBranchAddress != null && updatedBranchName != null)
                                         {
-                                            branchService.Update(updName, updBudget, updAddress);
+                                            branchService.Update(updatedBranchName, updatedBranchBudget, updatedBranchAddress);
                                             branchService.GetEverything();
                                         }
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 4:
                                         Console.Clear();
                                         Console.Write("Type in the name of a branch to find it: ");
-                                        string getName1 = Console.ReadLine();
-                                        if (getName1 != null)
+                                        string findBranch = Console.ReadLine();
+                                        if (findBranch != null)
                                         {
-                                            branchService.Get(getName1);
+                                            branchService.Get(findBranch);
                                         }
                                         else
                                         {
                                             Console.WriteLine("No such branch was found! Press any key to try again");
                                             Console.ReadKey();
-                                            goto MenuSec;
+                                            goto secondaryMenu;
                                         }
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 5:
                                         Console.Clear();
                                         branchService.GetEverything();
                                         Console.WriteLine("To go back press any key");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 6:
                                         Console.Clear();
                                         Console.WriteLine("Type in the name of a branch to sum up a profit");
@@ -140,7 +140,7 @@ namespace Final_Project
                                         branchService.GetProfit(braNameProf);
                                         Console.WriteLine("Press any key to return to menu");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 7:                                          //HireEmployee
                                                                                      //Console.Clear();
                                                                                      //Console.WriteLine("Pls enter Branch name to Hire employee");
@@ -171,16 +171,16 @@ namespace Final_Project
                                         //    Console.WriteLine("employee is not available");
                                         //}
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 8:
                                         Console.Clear();
                                         Console.WriteLine("Type in the name of branches and the name of an employee whom you want to transfer");
-                                        string fromBraName = Console.ReadLine();
-                                        string toBraName = Console.ReadLine();
-                                        string nameEmp = Console.ReadLine();
-                                        branchService.TransferEmployee(fromBraName, toBraName, nameEmp);
+                                        string fromBranch = Console.ReadLine();
+                                        string toBranch = Console.ReadLine();
+                                        string employeeName = Console.ReadLine();
+                                        branchService.TransferEmployee(fromBranch, toBranch, employeeName);
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     //case 9:
                                     //    Console.Clear();
                                     //    Console.Write("Select First Branch :");
@@ -191,12 +191,12 @@ namespace Final_Project
                                     //    decimal budget = decimal.Parse(Console.ReadLine());
                                     //    branchService.TransferMoney(first__branch, second__branch, budget);
                                     //    Console.ReadKey();
-                                    //    goto MenuSec;
+                                    //    goto secondaryMenu;
                                     case 10:
                                         Console.Clear();
                                         Console.WriteLine("Going back to main menu, press any key to continue");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 0:
                                         Console.Clear();
                                         Console.WriteLine("Press any key to quit !");
@@ -233,16 +233,16 @@ namespace Final_Project
                                 {
                                     case 1:
                                         Console.Clear();
-                                        Console.WriteLine("Type in the Name, Surname and the salary");
-                                        string newName2 = Console.ReadLine();
-                                        string newSurname2 = Console.ReadLine();
-                                        decimal newSalary = decimal.Parse(Console.ReadLine());
-                                        string newProfess = Console.ReadLine();
-                                        if (newName2 != null && newSurname2 != null && newProfess != null && newSalary != 0)
+                                        Console.WriteLine("Type in the Name, Surname, Salary and the profession");
+                                        string newEmployeeName = Console.ReadLine();
+                                        string newEmployeeSurname = Console.ReadLine();
+                                        decimal newEmployeeSalary = decimal.Parse(Console.ReadLine());
+                                        string newEmployeeProfession = Console.ReadLine();
+                                        if (newEmployeeName != null && newEmployeeSurname != null && newEmployeeProfession != null && newEmployeeSalary != 0)
                                         {
-                                            Employee empnew = new Employee(newName2, newSurname2, newSalary, newProfess, false);
+                                            Employee empnew = new Employee(newEmployeeName, newEmployeeSurname, newEmployeeSalary, newEmployeeProfession, false);
                                             employeeService.Create(empnew);
-                                            Console.WriteLine($"You hired a new employee: {newName2} {newSurname2} with salary {newSalary} for the {newProfess} position");
+                                            Console.WriteLine($"You hired a new employee: {newEmployeeName} {newEmployeeSurname} with salary {newEmployeeSalary} for the {newEmployeeProfession} position");
                                             employeeService.GetEverything();
                                         }
                                         else
@@ -250,16 +250,16 @@ namespace Final_Project
                                             Console.WriteLine("Invalid! Press any key to return to Main Menu");
                                         }
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
 
                                     case 2:
                                         Console.Clear();
                                         Console.Write("Type in the name of an employee to delete it: ");
 
-                                        string delName1 = Console.ReadLine();
-                                        if (delName1 != null)
+                                        string deleteEmployee = Console.ReadLine();
+                                        if (deleteEmployee != null)
                                         {
-                                            employeeService.Delete(delName1);
+                                            employeeService.Delete(deleteEmployee);
                                         }
                                         else
                                         {
@@ -267,32 +267,32 @@ namespace Final_Project
                                         }
                                         Console.WriteLine("Press any key to return to main menu");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 3:
                                         Console.Clear();
                                         Console.WriteLine("Type in the name of an employee whom you want to update");
-                                        string updName1 = Console.ReadLine();
-                                        if (updName1 != null)
+                                        string eupdateEmployee = Console.ReadLine();
+                                        if (eupdateEmployee != null)
                                         {
                                             Console.WriteLine("Type in the new salary and the new profession");
-                                            decimal updSalary1 = decimal.Parse(Console.ReadLine());
-                                            string updProfess1 = Console.ReadLine();
-                                            if (updProfess1 != null && updSalary1 != 0)
+                                            decimal updateSalary = decimal.Parse(Console.ReadLine());
+                                            string updateProfession = Console.ReadLine();
+                                            if (updateProfession != null && updateSalary != 0)
                                             {
-                                                employeeService.Update(updName1, updSalary1, updProfess1);
+                                                employeeService.Update(eupdateEmployee, updateSalary, updateProfession);
                                                 employeeService.GetEverything();
                                             }
                                         }
                                         Console.WriteLine("Press any key to return to main menu");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 4:
                                         Console.Clear();
                                         Console.Write("Type in the name of an employee to find it: ");
-                                        string getName2 = Console.ReadLine();
-                                        if (getName2 != null)
+                                        string findEmployee = Console.ReadLine();
+                                        if (findEmployee != null)
                                         {
-                                            employeeService.Get(getName2);
+                                            employeeService.Get(findEmployee);
                                         }
                                         else
                                         {
@@ -300,18 +300,18 @@ namespace Final_Project
                                         }
                                         Console.WriteLine("Press any key to return Menu");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 5:
                                         Console.Clear();
                                         employeeService.GetEverything();
                                         Console.WriteLine("Press any key to return to main menu");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 10:
                                         Console.Clear();
                                         Console.WriteLine("Going back to main menu, press any key to continue");
                                         Console.ReadKey();
-                                        goto MenuSec;
+                                        goto secondaryMenu;
                                     case 0:
                                         Console.Clear();
                                         Console.WriteLine("Press any key to quit!");

@@ -1,21 +1,17 @@
 ﻿<Properties StartupConfiguration="{F8864631-459F-479D-A204-DCBD2D3AD669}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Final-Project/Program.cs">
     <Files>
-      <File FileName="Final-Project/Program.cs" Line="23" Column="23" />
-      <File FileName="Final-Project/Services/Implementations/BranchService.cs" Line="41" Column="33" />
-      <File FileName="Final-Project/Services/Interfaces/IBankService.cs" Line="10" Column="41" />
+      <File FileName="Final-Project/Program.cs" Line="22" Column="38" />
+      <File FileName="Final-Project/Services/Implementations/BranchService.cs" Line="12" Column="24" />
+      <File FileName="Final-Project/Services/Interfaces/IBankService.cs" Line="9" Column="32" />
       <File FileName="Final-Project/Data/Bank.cs" Line="17" Column="1" />
-      <File FileName="Final-Project/Models/Branch.cs" Line="12" Column="59" />
-      <File FileName="Final-Project/Services/Interfaces/IBranchService.cs" Line="9" Column="31" />
-      <File FileName="Final-Project/Models/Employee.cs" Line="13" Column="5" />
+      <File FileName="Final-Project/Models/Branch.cs" Line="17" Column="46" />
+      <File FileName="Final-Project/Services/Interfaces/IBranchService.cs" Line="11" Column="79" />
+      <File FileName="Final-Project/Models/Employee.cs" Line="13" Column="31" />
       <File FileName="Final-Project/Models/BaseEntity.cs" Line="1" Column="1" />
       <File FileName="Final-Project/Models/Manager.cs" Line="1" Column="1" />
-      <File FileName="Final-Project/Services/Implementations/EmployeeService.cs" Line="8" Column="36" />
+      <File FileName="Final-Project/Services/Implementations/EmployeeService.cs" Line="13" Column="17" />
       <File FileName="Final-Project/Services/Interfaces/IEmployeeService.cs" Line="11" Column="1" />
     </Files>
     <Pads>
@@ -39,6 +35,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Final-Project PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
