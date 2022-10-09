@@ -141,35 +141,13 @@ namespace Final_Project
                                         Console.WriteLine("Press any key to return to menu");
                                         Console.ReadKey();
                                         goto secondaryMenu;
-                                    case 7:                                          //HireEmployee
-                                                                                     //Console.Clear();
-                                                                                     //Console.WriteLine("Pls enter Branch name to Hire employee");
-                                                                                     //string hireBraName = Console.ReadLine();
-                                                                                     //Branch hireBranch = branchService.Get(hireBraName);
-                                                                                     //if (hireBranch == null)
-                                                                                     //{
-                                                                                     //    Console.WriteLine(" Branch is not available");
-                                                                                     //}
-
-                                        //Console.WriteLine("Pls enter Employee name to Hire employee");
-                                        //string hireEmpName = Console.ReadLine();
-                                        //Employee hireEmployee = employeeService.Get(hireEmpName);
-                                        //if (hireEmployee != null)
-                                        //{
-                                        //    if (hireEmployee.Salary < hireBranch.Budget)
-                                        //    {
-                                        //        hireBranch.Employees.Add(hireEmployee);
-                                        //        Console.WriteLine("Employee hired successfully");
-                                        //    }
-                                        //    else
-                                        //    {
-                                        //        Console.WriteLine("Budget is not enough");
-                                        //    }
-                                        //}
-                                        //else
-                                        //{
-                                        //    Console.WriteLine("employee is not available");
-                                        //}
+                                    case 7:
+                                        Console.WriteLine("Type in the name of an employee :");
+                                        string nameEmployee = Console.ReadLine();
+                                        Console.WriteLine("Type in the name of a branch :");
+                                        string nameBranch = Console.ReadLine();
+                                        Console.WriteLine();
+                                        branchService.HireEmployee(nameEmployee, nameBranch);
                                         Console.ReadKey();
                                         goto secondaryMenu;
                                     case 8:
@@ -181,17 +159,6 @@ namespace Final_Project
                                         branchService.TransferEmployee(fromBranch, toBranch, employeeName);
                                         Console.ReadKey();
                                         goto secondaryMenu;
-                                    //case 9:
-                                    //    Console.Clear();
-                                    //    Console.Write("Select First Branch :");
-                                    //    var first__branch = Console.ReadLine();
-                                    //    Console.Write("Select Second Branch :");
-                                    //    var second__branch = Console.ReadLine();
-                                    //    Console.Write("Enter Budget :");
-                                    //    decimal budget = decimal.Parse(Console.ReadLine());
-                                    //    branchService.TransferMoney(first__branch, second__branch, budget);
-                                    //    Console.ReadKey();
-                                    //    goto secondaryMenu;
                                     case 10:
                                         Console.Clear();
                                         Console.WriteLine("Going back to main menu, press any key to continue");

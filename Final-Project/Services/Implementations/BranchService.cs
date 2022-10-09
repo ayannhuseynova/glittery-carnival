@@ -102,9 +102,14 @@ namespace Final_Project.Services.Implementations
             }
         }
 
-        public void HireEmployee(string namaBra, string nameEmp)
+        public bool HireEmployee(string employeeFullName, string branchName)
         {
-            Branch branch = bank.Datas.Find(x => x.Name.ToLower().Trim() == namaBra.ToLower().Trim());
+            var employee = employees.Datas.Find(e => e.Name == employeeFullName);
+            var branch = bank.Datas.Find(b => b.Name == branchName);
+            branch.Employees.Add(employee);
+
+            Console.WriteLine(branch.Name + "," + branch.Address + "," + branch.Budget);
+            return true;
         }
 
         public void TransferEmployee(string fromBranch, string toBranch, string name3)

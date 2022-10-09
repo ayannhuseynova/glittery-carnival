@@ -1,5 +1,4 @@
 ﻿<Properties StartupConfiguration="{F8864631-459F-479D-A204-DCBD2D3AD669}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Final-Project/Program.cs">
     <Files>
       <File FileName="Final-Project/Program.cs" Line="22" Column="38" />
@@ -25,7 +24,6 @@
                 <Node name="Implementations" expanded="True" />
                 <Node name="Interfaces" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -39,6 +37,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Final-Project PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Final-Project PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

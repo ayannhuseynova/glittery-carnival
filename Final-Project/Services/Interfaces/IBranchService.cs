@@ -5,7 +5,7 @@ namespace Final_Project.Services.Interfaces
 {
     public interface IBranchService : IBankService<Branch>
     {
-        void HireEmployee(string nameBra, string nameEmp);
+        bool HireEmployee(string fullNameofEmployee, string branchName);
         void GetProfit(string name);
         void TransferMoney(string name1, string name2, decimal budget);
         void TransferEmployee(string fromBranch, string toBranch, string name3);
