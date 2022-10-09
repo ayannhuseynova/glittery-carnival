@@ -7,8 +7,7 @@ namespace Final_Project.Services.Interfaces
     {
         bool HireEmployee(string fullNameofEmployee, string branchName);
         void GetProfit(string name);
-        void TransferMoney(string name1, string name2, decimal budget);
-        void TransferEmployee(string fromBranch, string toBranch, string name3);
+        //void TransferMoney(string name1, string name2, decimal budget);
     }
 }
 

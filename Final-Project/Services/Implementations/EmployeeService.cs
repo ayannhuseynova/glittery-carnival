@@ -33,7 +33,7 @@ namespace Final_Project.Services.Implementations
             }
             else
             {
-                Console.WriteLine("employee entered is null or unavailable");
+                Console.WriteLine("No such employee was found");
             }
         }
 
@@ -43,11 +43,13 @@ namespace Final_Project.Services.Implementations
             {
                 Employee employee = bank.Datas.Find(m => m.Name.Contains(name.Trim())
                 || m.Surname.Contains(name.Trim()));
-                Console.WriteLine(employee.Name + " " + employee.Surname + " " + employee.Profession + " " + employee.Salary);
+                Console.WriteLine($"Here is the information about this employee!");
+                Console.WriteLine($"Full Name: {employee.Name} {employee.Surname}");
+                Console.WriteLine($"Profession / salary: {employee.Profession} {employee.Salary}");
             }
             catch (Exception)
             {
-                Console.WriteLine("Employee not found");
+                Console.WriteLine("Employee was not found");
             }
         }
 

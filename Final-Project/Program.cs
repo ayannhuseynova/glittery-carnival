@@ -4,6 +4,7 @@ using System.Reflection;
 using Final_Project.Services.Implementations;
 using System.Collections.Generic;
 using System.Runtime.Intrinsics.X86;
+using System.Security;
 
 namespace Final_Project
 {
@@ -12,7 +13,7 @@ namespace Final_Project
         static void Main(string[] args)
         {
             Console.BackgroundColor = ConsoleColor.Gray;
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
             BranchService branchService = new BranchService();
             EmployeeService employeeService = new EmployeeService();
@@ -150,15 +151,15 @@ namespace Final_Project
                                         branchService.HireEmployee(nameEmployee, nameBranch);
                                         Console.ReadKey();
                                         goto secondaryMenu;
-                                    case 8:
-                                        Console.Clear();
-                                        Console.WriteLine("Type in the name of branches and the name of an employee whom you want to transfer");
-                                        string fromBranch = Console.ReadLine();
-                                        string toBranch = Console.ReadLine();
-                                        string employeeName = Console.ReadLine();
-                                        branchService.TransferEmployee(fromBranch, toBranch, employeeName);
-                                        Console.ReadKey();
-                                        goto secondaryMenu;
+                                    //case 8:
+                                    //    Console.Clear();
+                                    //    Console.WriteLine("Type in the name of branches and the name of an employee whom you want to transfer");
+                                    //    string fromBranch = Console.ReadLine();
+                                    //    string toBranch = Console.ReadLine();
+                                    //    string employeeName = Console.ReadLine();
+                                    //    branchService.TransferEmployee(fromBranch, toBranch, employeeName);
+                                    //    Console.ReadKey();
+                                    //    goto secondaryMenu;
                                     case 10:
                                         Console.Clear();
                                         Console.WriteLine("Going back to main menu, press any key to continue");
@@ -344,6 +345,25 @@ namespace Final_Project
             }
 
         }
+
+        public static SecureString HidingPassword()
+        {
+            Console.Write("Enter ur password: ");
+            SecureString password = new SecureString();
+            ConsoleKeyInfo keyInfo;
+
+            do
+            {
+                keyInfo = Console.ReadKey(true);
+                if (!char.IsControl(keyInfo.KeyChar))
+                {
+                    password.AppendChar(keyInfo.KeyChar);
+                    Console.Write("*");
+                }
+            } while (keyInfo.Key != ConsoleKey.Enter);
+            return password;
+        }
+
         public static void SeedDatabase(EmployeeService employeeService, BranchService branchService)
         {
             List<Employee> employees = new List<Employee>();

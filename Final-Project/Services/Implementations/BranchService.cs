@@ -87,13 +87,13 @@ namespace Final_Project.Services.Implementations
             {
                 if (branch.Employees.Any())
                 {
-                    decimal totsalary = 0;
+                    decimal sumSalary = 0;
                     foreach (var employee in branch.Employees)
                     {
-                        totsalary += employee.Salary;
+                        sumSalary += employee.Salary;
                     }
-                    decimal ourprofit = branch.Budget - totsalary;
-                    Console.WriteLine("Our profit monthly: " + ourprofit);
+                    decimal profit = branch.Budget - sumSalary;
+                    Console.WriteLine($"Your total monthly profit for {branch.Name} is {profit}$");
                 }
             }
             else
@@ -112,29 +112,18 @@ namespace Final_Project.Services.Implementations
             return true;
         }
 
-        public void TransferEmployee(string fromBranch, string toBranch, string name3)
+        public void TransferEmployee(string fromBranch, string toBranch, decimal budget)
         {
             Branch branch1 = bank.Datas.Find(a => a.Name.Trim() == fromBranch.Trim());
             Branch branch2 = bank.Datas.Find(a => a.Name.Trim() == toBranch.Trim());
-            Employee empTransfer = branch1.Employees.Find(a => a.Name.Trim() == name3.Trim());
-            empTransfer.SoftDelete = true;
-            branch1.Employees.Remove(empTransfer);
-            branch2.Employees.Add(empTransfer);
-            Console.WriteLine("Employee transferred");
+            ////Employee empTransfer = branch1.Employees.Find(a => a.Name.Trim() == budget.Trim());
+            //empTransfer.SoftDelete = true;
+            //branch1.Employees.Remove(empTransfer);
+            //branch2.Employees.Add(empTransfer);
             foreach (Employee employee in branch2.Employees)
             {
-                Console.WriteLine(employee.Name + " " + employee.Surname + " " + employee.Salary + " " + employee.Profession);
+                Console.WriteLine($"Employee {employee.Name} {employee.Surname} with the salary of {employee.Salary} and with the {employee.Profession} salary");
             }
-        }
-
-        public void TransferMoney(string name1, string name2, decimal budget)
-        {
-            Branch branch1 = bank.Datas.Find(x => x.Name.ToLower().Trim() == name1.ToLower().Trim());
-            Branch branch2 = bank.Datas.Find(x => x.Name.ToLower().Trim() == name2.ToLower().Trim());
-            branch1.Budget = branch1.Budget - budget;
-            branch2.Budget = branch2.Budget + budget;
-            Console.WriteLine($"The amount of {budget}  was already transferred !");
-            GetEverything();
         }
     }
 }
